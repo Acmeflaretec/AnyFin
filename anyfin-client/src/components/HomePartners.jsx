@@ -18,7 +18,7 @@ const HomePartners = () => {
           <h2 className="display-5 fw-bold mb-3" style={{ color: '#333' }}>
             Our Financial Partners
           </h2>
-          <p className="lead" style={{ color: '#666' }}>
+          <p className="lead" style={{ color: '#666' ,fontFamily:' "Sen", sans-serif' }}>
             We proudly collaborate with leading financial institutions to provide our clients with the best services.
           </p>
         </div>

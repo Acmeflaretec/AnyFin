@@ -20,6 +20,7 @@ const SectionSubtitle = styled.p`
   font-size: 1.2rem;
   max-width: 600px;
   margin: 0 auto 3rem;
+  font-family:Sen, sans-serif
 `;
 
 const AboutImage = styled.div`

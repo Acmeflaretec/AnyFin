@@ -10,7 +10,7 @@ const Contact = () => {
           <h1 className="display-5 fw-bold mb-4" style={{ color: '#2c3e50' }}>
             Get in Touch
           </h1>
-          <p className="lead mb-5" style={{ color: '#34495e', maxWidth: '600px', margin: '0 auto' }}>
+          <p className="lead mb-5" style={{ color: '#34495e', maxWidth: '600px', margin: '0 auto' ,fontFamily:' "Sen", sans-serif' }}>
             Have a question or need assistance? Our team is here to help you with any inquiries.
           </p>
         </div>
@@ -19,7 +19,7 @@ const Contact = () => {
             <div className="contact-info mb-5">
               <div className="d-flex align-items-center mb-4">
                 <GeoAlt size={30} color="#3498db" className="me-4" />
-                <p style={{ color: '#34495e', margin: 0, fontSize: '1.1rem' }}>
+                <p style={{ color: '#34495e', margin: 0, fontSize: '1.1rem' ,fontFamily:' "Sen", sans-serif'}}>
                   123 Main Street, Anytown USA 12345
                 </p>
               </div>
@@ -27,7 +27,7 @@ const Contact = () => {
             <div className="contact-info mb-5">
               <div className="d-flex align-items-center mb-4">
                 <Telephone size={30} color="#3498db" className="me-4" />
-                <p style={{ color: '#34495e', margin: 0, fontSize: '1.1rem' }}>
+                <p style={{ color: '#34495e', margin: 0, fontSize: '1.1rem' ,fontFamily:' "Sen", sans-serif'}}>
                   +1 (123) 456-7890
                 </p>
               </div>
@@ -35,7 +35,7 @@ const Contact = () => {
             <div className="contact-info mb-5">
               <div className="d-flex align-items-center mb-4">
                 <Envelope size={30} color="#3498db" className="me-4" />
-                <p style={{ color: '#34495e', margin: 0, fontSize: '1.1rem' }}>
+                <p style={{ color: '#34495e', margin: 0, fontSize: '1.1rem' ,fontFamily:' "Sen", sans-serif'}}>
                   info@anyfin.com
                 </p>
               </div>

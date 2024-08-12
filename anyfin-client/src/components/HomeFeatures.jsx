@@ -36,7 +36,7 @@ function HomeFeatures() {
           <h2 className="display-5 fw-bold mb-3" style={{ color: '#333' }}>
             Why Choose ANYFIN?
           </h2>
-          <p className="lead" style={{ color: '#666' }}>
+          <p className="lead" style={{ color: '#666' ,fontFamily:' "Sen", sans-serif' }}>
             Discover the unique advantages that set ANYFIN apart in the financial services industry.
           </p>
         </div>

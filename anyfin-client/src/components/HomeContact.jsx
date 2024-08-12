@@ -10,7 +10,7 @@ const HomeContact = () => {
           <h2 className="display-5 fw-bold mb-3" style={{ color: '#333' }}>
             Get in Touch
           </h2>
-          <p className="lead" style={{ color: '#666' }}>
+          <p className="lead" style={{ color: '#666',fontFamily:' "Sen", sans-serif' }}>
             Have a question or need assistance? Our expert team is here to help.
           </p>
      <Link to={'/contact'}>

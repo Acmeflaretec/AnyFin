@@ -8,7 +8,7 @@ function HomeServices() {
       <Container>
         <div className="text-center mb-5">
           <h2 className="display-5 fw-bold" style={{ color: '#333' }}>Our Comprehensive Services</h2>
-          <p className="lead mb-4" style={{ color: '#666' }}>
+          <p className="lead mb-4" style={{ color: '#666' ,fontFamily:' "Sen", sans-serif'}}>
             ANYFIN offers a wide range of financial solutions to help you achieve your goals.
           </p>
         </div>
