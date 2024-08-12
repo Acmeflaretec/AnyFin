@@ -31,7 +31,7 @@ function Category({ image, name, desc, id }) {
 }
 
 Category.propTypes = {
-  image: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,     
   name: PropTypes.string.isRequired,
   desc: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
