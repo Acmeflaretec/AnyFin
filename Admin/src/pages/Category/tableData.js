@@ -7,8 +7,15 @@ import { useGetCategory } from "queries/ProductQuery";
 import Table from "examples/Tables/Table";
 import { Icon } from "@mui/material";
 import { Link } from "react-router-dom";
+import PropTypes from 'prop-types';
 
 function Category({ image, name, desc, id }) {
+  ComponentName.propTypes = {
+    image: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    desc: PropTypes.string.isRequired,
+    id: PropTypes.string.isRequired,
+  };
   return (
     <Box component={Link} display="flex" alignItems="center" px={1} py={0.5} to={`/services/editServices/${id}`}>
       <Box mr={2}>
@@ -35,9 +42,9 @@ const TableData = () => {
     // { name: "Lastupdated", align: "center" },
     { name: "action", align: "center" },
   ]
-console.log('data',data);
+  console.log('data', data);
   const rows = data?.data?.map(item => ({
-    details: <Category image={`${process.env.REACT_APP_API_URL}/uploads/${item?.image}`} name={item?.heading} desc={item?.subheading} id={item?._id}/>,
+    details: <Category image={`${process.env.REACT_APP_API_URL}/uploads/${item?.image}`} name={item?.heading} desc={item?.subheading} id={item?._id} />,
     status: (
       <Badge variant="gradient" badgeContent={item?.isAvailable ? 'Available' : 'Unavailable'} color={item?.isAvailable ? "success" : 'secondary'} size="xs" container />
     ),
