@@ -28,7 +28,7 @@ const Contact = () => {
               <div className="d-flex align-items-center mb-4">
                 <Telephone size={30} color="#3498db" className="me-4" />
                 <p style={{ color: '#34495e', margin: 0, fontSize: '1.1rem' ,fontFamily:' "Sen", sans-serif'}}>
-                  +1 (123) 456-7890
+                 +91 99610 11302
                 </p>
               </div>
             </div>

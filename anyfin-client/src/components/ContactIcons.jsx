@@ -8,7 +8,7 @@ const ContactIcons = () => {
         <Row className="flex-column align-items-end">
           <Col className="mb-3">
             <a
-              href="https://wa.me/123456789"
+              href="https://wa.me/+919961011302"
               target="_blank"
               rel="noopener noreferrer"
               className="d-flex align-items-center text-decoration-none whatsapp-link"
@@ -22,7 +22,7 @@ const ContactIcons = () => {
           </Col>
           <Col>
             <a
-              href="tel:+123456789"
+              href="tel:+919961011302"
               className="d-flex align-items-center text-decoration-none call-link"
               style={{
                 color: '#0077b6',

@@ -11,7 +11,7 @@ function Header() {
   };
 
   return (
-    <Navbar expand="lg" expanded={expanded} className="shadow-lg py-3" style={{ backgroundColor: '#fff', color: '#333' }}>
+    <Navbar expand="lg" expanded={expanded} className="shadow-sm py-3" style={{ backgroundColor: '#fff', color: '#333' }}>
       <Container>
         <Navbar.Brand as={Link} to="/" className="fw-bold d-flex align-items-center">
           <img src="logo.png" alt="logo" width={150} />

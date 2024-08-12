@@ -20,7 +20,7 @@ const ServiceDetails = () => {
 
   const handleWhatsAppRedirect = () => {
     // Replace this with your actual WhatsApp link
-    window.open('https://wa.me/1234567890', '_blank');
+    window.open('https://wa.me/+919961011302', '_blank');
   };
 
   return (
@@ -30,7 +30,7 @@ const ServiceDetails = () => {
           <img src={serviceData.image} alt={serviceData.title} className="img-fluid" />
         </Col>
         <Col md={6}>
-          <h2 className='display-5'>{serviceData.title}</h2>
+          <h2 className='display-5 fw-bold mb-2 mt-3'>{serviceData.title}</h2>
           <p>{serviceData.description}</p>
           <ul className="list-unstyled">
             {serviceData.features.map((feature, index) => (
@@ -39,7 +39,7 @@ const ServiceDetails = () => {
               </li>
             ))}
           </ul>
-          <Button variant="primary" style={{backgroundColor:'#0033CC'}} onClick={handleWhatsAppRedirect}>
+          <Button variant="primary" style={{backgroundColor:'#25D366' ,border:'#25D366'}} onClick={handleWhatsAppRedirect}>
             <Whatsapp className="me-2" /> {serviceData.cta}
           </Button>
         </Col>
