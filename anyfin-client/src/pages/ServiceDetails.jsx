@@ -34,7 +34,7 @@ const ServiceDetails = () => {
           <p>{serviceData.description}</p>
           <ul className="list-unstyled">
             {serviceData.features.map((feature, index) => (
-              <li key={index} className="mb-2">
+              <li key={index} className="mb-2" style={{fontFamily:' "Sen", sans-serif'}}>
                 <Check className="text-success me-2" /> {feature}
               </li>
             ))}

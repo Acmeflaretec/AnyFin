@@ -57,7 +57,7 @@ function HomeFeatures() {
                   <Card.Title className="fw-bold mb-3" style={{ color: '#333' }}>
                     {feature.title}
                   </Card.Title>
-                  <Card.Text style={{ color: '#666' }}>
+                  <Card.Text style={{ color: '#666' ,fontFamily:' "Sen", sans-serif' }}>
                     {feature.description}
                   </Card.Text>
                 </Card.Body>

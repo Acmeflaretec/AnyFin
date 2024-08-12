@@ -23,9 +23,10 @@ const SectionSubtitle = styled.p`
 `;
 
 const AboutImage = styled.div`
-  background-image: url(about.png);
+  background-image: url(aboutus.png);
   height: 500px;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
   border-radius: 12px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
@@ -36,22 +37,33 @@ const AboutImage = styled.div`
   }
 `;
 
+const FeatureContainer = styled.div`
+  display: flex;
+  align-items: center;
+  margin-bottom: 4rem; /* Increased margin for spacing */
+`;
+
 const FeatureIcon = styled.div`
   color: #3498db;
   font-size: 2.5rem;
   margin-right: 1rem;
+  display: flex;
+  align-items: center; /* Ensures icon is centered vertically */
+  justify-content: center;
 `;
 
 const FeatureTitle = styled.h3`
   color: #2c3e50;
   font-size: 1.5rem;
   font-weight: 600;
+  margin: 0; /* Remove any default margin */
 `;
 
 const FeatureText = styled.p`
   color: #34495e;
   font-size: 1rem;
   line-height: 1.6;
+  margin-top: 0.5rem; /* Added margin for spacing between title and text */
 `;
 
 const About = () => {
@@ -69,25 +81,31 @@ const About = () => {
             <AboutImage />
           </Col>
           <Col md={6} className="mt-5 mt-md-0">
-            <div className="d-flex align-items-center mb-4">
-              <FeatureIcon><FaHandshake /></FeatureIcon>
+            <FeatureContainer>
+              <FeatureIcon>
+                <FaHandshake />
+              </FeatureIcon>
               <FeatureTitle>Trusted Partnerships</FeatureTitle>
-            </div>
-            <FeatureText>
+            </FeatureContainer>
+            <FeatureText style={{ fontFamily: '"Sen", sans-serif' }}>
               At ANYFIN, we take pride in our extensive network of trusted financial partners. We've carefully curated relationships with leading banks, investment firms, and insurance providers to ensure our clients have access to the best products and services in the industry.
             </FeatureText>
-            <div className="d-flex align-items-center mb-4 mt-5">
-              <FeatureIcon><FaUserCircle /></FeatureIcon>
+            <FeatureContainer>
+              <FeatureIcon>
+                <FaUserCircle />
+              </FeatureIcon>
               <FeatureTitle>Expert Advisors</FeatureTitle>
-            </div>
-            <FeatureText>
+            </FeatureContainer>
+            <FeatureText style={{ fontFamily: '"Sen", sans-serif' }}>
               Our team of seasoned financial professionals is dedicated to helping you navigate the complex world of finance. With years of experience and a deep understanding of the market, our advisors are committed to providing personalized guidance and tailored solutions to help you achieve your financial goals.
             </FeatureText>
-            <div className="d-flex align-items-center mb-4 mt-5">
-              <FeatureIcon><FaMoneyBillAlt /></FeatureIcon>
+            <FeatureContainer>
+              <FeatureIcon>
+                <FaMoneyBillAlt />
+              </FeatureIcon>
               <FeatureTitle>Competitive Pricing</FeatureTitle>
-            </div>
-            <FeatureText>
+            </FeatureContainer>
+            <FeatureText style={{ fontFamily: '"Sen", sans-serif' }}>
               At ANYFIN, we believe in transparent and fair pricing. We're committed to offering competitive rates and fees across all our products and services, ensuring you get the best value for your money. Our goal is to help you maximize your financial potential without breaking the bank.
             </FeatureText>
           </Col>

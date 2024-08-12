@@ -118,9 +118,9 @@ function Services() {
                 <CardImage style={{ backgroundImage: `url(${service.image})` }} />
                 <CardBody>
                   <CardTitle>{service.title}</CardTitle>
-                  <CardText>{service.description}</CardText>
+                  <CardText style={{fontFamily:' "Sen", sans-serif'}}>{service.description}</CardText>
                   <Link to={'/servicedetails'} className='text-decoration-none'>
-                    <StyledButton>{service.cta}</StyledButton>
+                    <StyledButton>Know More</StyledButton>
                   </Link>
                 </CardBody>
               </ServiceCard>
