@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
-import { Check } from 'react-bootstrap-icons';
+import { Check, Whatsapp } from 'react-bootstrap-icons';
 
 const ServiceDetails = () => {
   const serviceData = {
@@ -15,61 +15,36 @@ const ServiceDetails = () => {
       'Customized loan solutions',
       'Dedicated customer support'
     ],
-    cta: 'Apply Now'
+    cta: 'Enquire Now'
+  };
+
+  const handleWhatsAppRedirect = () => {
+    // Replace this with your actual WhatsApp link
+    window.open('https://wa.me/1234567890', '_blank');
   };
 
   return (
-    <section className="service-details-section py-5" style={{ backgroundColor: '#f5f5f5' }}>
-      <Container>
-        <Row className="align-items-center">
-          <Col md={6}>
-            <div
-              className="service-image"
-              style={{
-                backgroundImage: `url(${serviceData.image})`,
-                height: '500px',
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                borderRadius: '8px',
-                boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
-              }}
-            />
-          </Col>
-          <Col md={6} className="mt-5 mt-md-0">
-            <h1 className="display-4 fw-bold mb-4" style={{ color: '#333' }}>
-              {serviceData.title}
-            </h1>
-            <p className="lead mb-4" style={{ color: '#666' }}>
-              {serviceData.description}
-            </p>
-            <ul className="list-unstyled">
-              {serviceData.features.map((feature, index) => (
-                <li key={index} className="d-flex align-items-center mb-3">
-                  <Check size={24} color="#0077b6" className="mr-3" />
-                  <span style={{ color: '#333' }}>{feature}</span>
-                </li>
-              ))}
-            </ul>
-            <Button
-              variant="primary"
-              size="lg"
-              className="fw-medium"
-              style={{
-                backgroundColor: '#0077b6',
-                borderColor: '#0077b6',
-                transition: 'all 0.3s ease',
-                '&:hover': {
-                  backgroundColor: '#005b8a',
-                  borderColor: '#005b8a'
-                }
-              }}
-            >
-              {serviceData.cta}
-            </Button>
-          </Col>
-        </Row>
-      </Container>
-    </section>
+    <Container className="my-5">
+      <Row>
+        <Col md={6}>
+          <img src={serviceData.image} alt={serviceData.title} className="img-fluid" />
+        </Col>
+        <Col md={6}>
+          <h2 className='display-5'>{serviceData.title}</h2>
+          <p>{serviceData.description}</p>
+          <ul className="list-unstyled">
+            {serviceData.features.map((feature, index) => (
+              <li key={index} className="mb-2">
+                <Check className="text-success me-2" /> {feature}
+              </li>
+            ))}
+          </ul>
+          <Button variant="primary" style={{backgroundColor:'#0033CC'}} onClick={handleWhatsAppRedirect}>
+            <Whatsapp className="me-2" /> {serviceData.cta}
+          </Button>
+        </Col>
+      </Row>
+    </Container>
   );
 };
 

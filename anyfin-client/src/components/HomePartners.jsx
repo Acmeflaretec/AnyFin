@@ -15,7 +15,7 @@ const HomePartners = () => {
     <section className="home-partners-section py-5" style={{ backgroundColor: '#f5f5f5' }}>
       <Container>
         <div className="text-center mb-5">
-          <h2 className="display-4 fw-bold mb-3" style={{ color: '#333' }}>
+          <h2 className="display-5 fw-bold mb-3" style={{ color: '#333' }}>
             Our Financial Partners
           </h2>
           <p className="lead" style={{ color: '#666' }}>

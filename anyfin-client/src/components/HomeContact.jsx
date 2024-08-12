@@ -6,7 +6,7 @@ const HomeContact = () => {
     <section className="home-contact-section py-5" style={{ backgroundColor: '#f5f5f5' }}>
       <Container>
         <div className="text-center mb-5">
-          <h2 className="display-4 fw-bold mb-3" style={{ color: '#333' }}>
+          <h2 className="display-5 fw-bold mb-3" style={{ color: '#333' }}>
             Get in Touch
           </h2>
           <p className="lead" style={{ color: '#666' }}>
@@ -18,7 +18,7 @@ const HomeContact = () => {
             <div
               className="contact-image"
               style={{
-                backgroundImage: 'url(https://img.freepik.com/free-photo/top-view-chat-bubbles-with-telephone-receiver_23-2148796076.jpg?ga=GA1.1.1794837574.1691059421&semt=ais_hybrid)',
+                backgroundImage: 'url(contact.png)',
                 height: '400px',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
@@ -28,7 +28,7 @@ const HomeContact = () => {
             />
           </Col>
           <Col md={8} lg={6} className="mt-5 mt-lg-0">
-            <div className="text-center">
+            <div className="text-start">
               <p className="lead mb-4" style={{ color: '#666' }}>
                 We're here to assist you with any questions or support you need. Feel free to reach out to us anytime!
               </p>
@@ -38,8 +38,8 @@ const HomeContact = () => {
                 size="lg"
                 className="fw-medium"
                 style={{
-                  backgroundColor: '#0077b6',
-                  borderColor: '#0077b6',
+                  backgroundColor: '#0033CC',
+                  borderColor: '#0033CC',
                   transition: 'all 0.3s ease',
                 }}
               >

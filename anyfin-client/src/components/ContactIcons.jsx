@@ -1,10 +1,9 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { Whatsapp, Telephone } from 'react-bootstrap-icons';
 
 const ContactIcons = () => {
   return (
-    <div className="contact-icons-wrapper" style={{ position: 'fixed', bottom: '20px', right: '20px', zIndex: '999' }}>
+    <div className="contact-icons-wrapper" style={{ position: 'fixed', bottom: '20px', right: '0px', zIndex: '999' }}>
       <Container>
         <Row className="flex-column align-items-end">
           <Col className="mb-3">
@@ -18,7 +17,7 @@ const ContactIcons = () => {
                 transition: 'all 0.3s ease',
               }}
             >
-              <Whatsapp size={32} />
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style={{ width: '52px', height: '52px' }} />
             </a>
           </Col>
           <Col>
@@ -30,7 +29,7 @@ const ContactIcons = () => {
                 transition: 'all 0.3s ease',
               }}
             >
-              <Telephone size={32} />
+              <img src="phone.png" alt="Telephone" style={{ width: '52px', height: '52px' }} />
             </a>
           </Col>
         </Row>

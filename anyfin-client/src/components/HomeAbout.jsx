@@ -14,7 +14,7 @@ function HomeAbout() {
           </Col>
           <Col md={6}>
             <div className="about-content">
-              <h2 className="display-4 fw-bold mb-4" style={{ color: '#0033CC' }}>
+              <h2 className="display-5 fw-bold mb-4" style={{ color: '#333' }}>
                 Redefining Financial <br /> Solutions for Your Future
               </h2>
               <p className="lead mb-5" style={{ color: '#666' }}>

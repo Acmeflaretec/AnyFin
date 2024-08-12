@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 function HomeBanner() {
   return (
@@ -7,29 +8,26 @@ function HomeBanner() {
       <Container>
         <Row className="align-items-center">
           <Col md={6}>
-            <h1 className="display-4 fw-bold mb-4" style={{ color: '#333' }}>
+            <h1 className="display-5 fw-bold mb-4" style={{ color: '#333' }}>
               Transform Your Financial Future
             </h1>
             <p className="lead mb-5" style={{ color: '#666' }}>
               At ANYFIN, we provide personalized financial solutions to help you achieve your goals and secure your long-term success.
             </p>
-            <Button
-              variant="primary"
-              size="lg"
-              href="#"
-              className="px-4 py-2 fw-medium"
-              style={{
-                backgroundColor: '#0033CC',
-                borderColor: '#0033CC',
-                transition: 'all 0.3s ease',
-                '&:hover': {
-                  backgroundColor: '#002E99',
-                  borderColor: '#002E99'
-                }
-              }}
-            >
-              Explore Our Services
-            </Button>
+            <Link to="/services">
+              <Button
+                variant="primary"
+                size="lg"
+                className="px-4 py-2 fw-medium"
+                style={{
+                  backgroundColor: '#0033CC',
+                  borderColor: '#0033CC',
+                  transition: 'all 0.3s ease',
+                }}
+              >
+                Explore Our Services
+              </Button>
+            </Link>
           </Col>
           <Col md={6} className="d-none d-md-block">
             <div className="banner-image-wrapper">

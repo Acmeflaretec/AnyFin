@@ -4,25 +4,25 @@ import { Container, Row, Col, Card } from 'react-bootstrap';
 function HomeFeatures() {
   const features = [
     {
-      image: 'https://img.freepik.com/free-photo/standard-quality-control-collage_23-2149631022.jpg?ga=GA1.1.1794837574.1691059421&semt=ais_hybrid',
+      image: 'secure.png',
       title: 'Secure Solutions',
       description:
         'Your financial data and assets are safeguarded with our industry-leading security measures.'
     },
     {
-      image: 'https://img.freepik.com/free-photo/thoughtful-man-with-infographic-with-heads_1134-460.jpg?ga=GA1.1.1794837574.1691059421&semt=ais_hybrid',
+      image: 'personal.png',
       title: 'Personalized Approach',
       description:
         'Our team of experts works closely with you to develop tailored financial strategies that meet your unique needs.'
     },
     {
-      image: 'https://img.freepik.com/free-vector/landing-page-website_23-2147772976.jpg?ga=GA1.1.1794837574.1691059421&semt=ais_hybrid',
+      image: 'payments.png',
       title: 'Transparent Pricing',
       description:
         'We believe in upfront and transparent pricing, ensuring you always know what you are paying for.'
     },
     {
-      image: 'https://img.freepik.com/free-vector/technical-support-concept-idea-customer-service-consultant-support-clients-help-them-with-problems-providing-customer-with-valuable-information-vector-illustration-cartoon-style_613284-2779.jpg?ga=GA1.1.1794837574.1691059421&semt=ais_hybrid',
+      image: 'support.png',
       title: 'Continuous Support',
       description:
         'Our ongoing support and regular reviews help you adapt your financial plan as your life changes.'
@@ -33,7 +33,7 @@ function HomeFeatures() {
     <section className="home-features py-5 bg-light">
       <Container>
         <div className="text-center mb-5">
-          <h2 className="display-4 fw-bold mb-3" style={{ color: '#333' }}>
+          <h2 className="display-5 fw-bold mb-3" style={{ color: '#333' }}>
             Why Choose ANYFIN?
           </h2>
           <p className="lead" style={{ color: '#666' }}>
