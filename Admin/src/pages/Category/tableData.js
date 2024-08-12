@@ -9,13 +9,10 @@ import { Icon } from "@mui/material";
 import { Link } from "react-router-dom";
 import PropTypes from 'prop-types';
 
+
+
 function Category({ image, name, desc, id }) {
-  ComponentName.propTypes = {
-    image: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-    desc: PropTypes.string.isRequired,
-    id: PropTypes.string.isRequired,
-  };
+  
   return (
     <Box component={Link} display="flex" alignItems="center" px={1} py={0.5} to={`/services/editServices/${id}`}>
       <Box mr={2}>
@@ -33,6 +30,12 @@ function Category({ image, name, desc, id }) {
   );
 }
 
+Category.propTypes = {
+  image: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  desc: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+};
 const TableData = () => {
   const { data, isLoading } = useGetCategory({ pageNo: 1, pageCount: 100 });
   const columns = [
